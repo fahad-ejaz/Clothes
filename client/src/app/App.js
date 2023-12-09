@@ -30,7 +30,7 @@ function App() {
           <Router >
             <Header />
               <Routes>
-                  <Route index element={<Home />}/>
+                  <Route path="/" element={<Home />}/>
                   <Route path="/account">
                     <Route path="me" element={<MyAccount/>}/>
                     <Route path="manage" element={<ManageAccount/>}/>
