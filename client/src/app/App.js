@@ -1,5 +1,5 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Route , Routes} from 'react-router-dom';
+import { Route , Routes, HashRouter} from 'react-router-dom';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,7 +27,7 @@ function App() {
    <CartItemsProvider>
       <WishItemsProvider>
         <SearchProvider>
-          <Router >
+          <HashRouter >
             <Header />
               <Routes>
                   <Route path="/" element={<Home />}/>
@@ -63,7 +63,7 @@ function App() {
                 <Routes>
                 <Route path="/admin" element={<Wishlist />} />
               </Routes>
-          </Router>
+          </HashRouter>
         </SearchProvider>
       </WishItemsProvider>
    </CartItemsProvider>

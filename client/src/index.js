@@ -7,8 +7,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <ParallaxProvider>
-<HashRouter>
+{/* <HashRouter> */}
     <App />
-    </HashRouter>
+    {/* </HashRouter> */}
 </ParallaxProvider>
 );
