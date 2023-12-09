@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Clothes/static/css/main.679fc4bd.css",
+    "main.js": "/Clothes/static/js/main.a4b1c521.js",
+    "static/media/wood.avif": "/Clothes/static/media/wood.61999ac73055e28553bc.avif",
+    "static/media/kids-2.jpeg": "/Clothes/static/media/kids-2.f09f98d1fa82c7f5fc80.jpeg",
+    "static/media/women-1.jpeg": "/Clothes/static/media/women-1.a3ab3f0b92f8610cad9e.jpeg",
+    "static/media/men-1.jpeg": "/Clothes/static/media/men-1.1be673ab928cc08bb100.jpeg",
+    "static/media/men2.png": "/Clothes/static/media/men2.e2bb29b95d23d0e4e42f.png",
+    "index.html": "/Clothes/index.html",
+    "main.679fc4bd.css.map": "/Clothes/static/css/main.679fc4bd.css.map",
+    "main.a4b1c521.js.map": "/Clothes/static/js/main.a4b1c521.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.679fc4bd.css",
+    "static/js/main.a4b1c521.js"
+  ]
+}
