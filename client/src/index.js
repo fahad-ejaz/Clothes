@@ -6,6 +6,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <ParallaxProvider>
+<HashRouter>
     <App />
+    </HashRouter>
 </ParallaxProvider>
 );
