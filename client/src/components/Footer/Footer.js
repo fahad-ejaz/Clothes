@@ -19,7 +19,7 @@ const Footer = () => {
                         </div>
                         <ul className="fotter__help__links">
                             <li className="help__link">
-                                <a href="/"> Shipping</a>
+                                <a href="#"> Shipping</a>
                             </li>
                             <li className="help__link">
                                 <a href="/">Refund</a>
