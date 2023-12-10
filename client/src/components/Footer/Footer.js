@@ -19,16 +19,16 @@ const Footer = () => {
                         </div>
                         <ul className="fotter__help__links">
                             <li className="help__link">
-                                <a href="/#/"> Shipping</a>
+                                <a href="#/"> Shipping</a>
                             </li>
                             <li className="help__link">
-                                <a href="/#/">Refund</a>
+                                <a href="#/">Refund</a>
                             </li>
                             <li className="help__link">
-                                <a href="/#/">FAQ</a>
+                                <a href="#/">FAQ</a>
                             </li>
                             <li className="help__link">
-                                <a href="/#/">Accessiblity</a>
+                                <a href="#/">Accessiblity</a>
                             </li>
                         </ul>
                     </div>
