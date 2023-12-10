@@ -166,3 +166,37 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 800px) {
+    .footer__items__container{
+        justify-content: center;
+    }
+    .footer__help__header{
+        justify-content: center;
+    }
+    .fotter__help__links{
+        align-items: center;
+    }
+    .footer__contact__container{
+        justify-content: center;
+    }
+    .footer__contact__header{
+        justify-content: center;
+    }
+    .footer__contacts{
+        align-items: center;
+    }
+    .footer__contact{
+        width: auto;
+    }
+    .footer__social__link__container{
+        justify-content: center;
+    }
+    .footer__social__link__header{
+        justify-content: center;
+    }
+    .footer__social__links{
+        justify-content: center;
+    }
+
+}
