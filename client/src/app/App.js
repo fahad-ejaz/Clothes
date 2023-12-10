@@ -27,7 +27,7 @@ function App() {
    <CartItemsProvider>
       <WishItemsProvider>
         <SearchProvider>
-          <HashRouter basename='fahad-ejaz.github.io/Clothes/#/'>
+          <HashRouter >
             <Header />
               <Routes>
                   <Route path="/" element={<Home />}/>
