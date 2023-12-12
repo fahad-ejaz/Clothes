@@ -17,7 +17,7 @@ const FeaturedItems = (props) => {
         // startScroll:4000,
 
         // endScroll: 5600,
-        opacity: [0,1.5],
+        // opacity: [0,1.5],
         // shouldAlwaysCompleteAnimation: true,
         // translateX: [0, w/2/10]
     });

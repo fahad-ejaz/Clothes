@@ -49,6 +49,10 @@
     .search__form {
         width: 200px;
     }
+
+    .search__form__input {
+        padding-left: 0.5rem;
+    }
 }
 
 

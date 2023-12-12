@@ -13,68 +13,83 @@ import Form from '../Search-Bar/Form';
 import { Link } from 'react-router-dom';
 
 const DrawerNav = () => {
-        const [state, setState] = useState({
-          left: false,
-        });
+  const [state, setState] = useState({
+    left: false,
+  });
 
-    const toggleDrawer = (anchor, open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-          return;
-        }
-    
-        setState({ ...state, [anchor]: open });
-    };
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
 
-    const list = (anchor) => (
-        <Box
-        sx={{ width: 250 }}
-          role="presentation"
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
-        >
-        <List>
-            {['Home', 'Shop'].map((text) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemText>
-                    <Link to="/category/men">{text}</Link>
-                  </ListItemText>
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-          <List>
-              <ListItem disablePadding>
-                <Control />
-              </ListItem>
-          </List>
-          <List>
-            <ListItem>
-                <div className="search__drawer">
-                    <Form />
-                </div>
-            </ListItem> 
-          </List>
-          <Divider />
-        </Box>
-      );
+    setState({ ...state, [anchor]: open });
+  };
 
-    return ( 
-        <Fragment>
-            {['left'].map((anchor) => (
-                <Fragment >
-                {state.left? <MenuOpenIcon fontSize='large' /> : <MenuIcon fontSize='large' onClick={toggleDrawer(anchor, true)} />}
-                <Drawer
-                    anchor={anchor}
-                    open={state[anchor]}
-                    onClose={toggleDrawer(anchor, false)}
-                >
-                    {list(anchor)}
-                </Drawer>
-                </Fragment>
-            ))}
+  const list = (anchor) => (
+    <Box
+      sx={{ width: 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List>
+        <ListItem key='Home' disablePadding>
+          <ListItemButton>
+            <ListItemText sx={{ textAlign: 'center' }}>
+              <Link to='/'>Home</Link>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem key='Shop' disablePadding>
+          <ListItemButton>
+            <ListItemText sx={{ textAlign: 'center' }}>
+              <Link to='/Shop'>Shop</Link>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+      
+        {['Men', 'Women', 'Kids'].map((text) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemText sx={{ textAlign: 'center' }}>
+                <Link to={`/category/${text.toLowerCase()}`}>{text}</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <List>
+        <ListItem disablePadding>
+          <Control />
+        </ListItem>
+      </List>
+      <List>
+        <ListItem>
+          <div className="search__drawer">
+            <Form />
+          </div>
+        </ListItem>
+      </List>
+      <Divider />
+    </Box>
+  );
+
+  return (
+    <Fragment sx={{ zIndex: 100 }}>
+      {['left'].map((anchor) => (
+        <Fragment >
+          {state.left ? <MenuOpenIcon fontSize='large' /> : <MenuIcon fontSize='large' onClick={toggleDrawer(anchor, true)} />}
+          <Drawer
+            anchor={anchor}
+            open={state[anchor]}
+            onClose={toggleDrawer(anchor, false)}
+          >
+            {list(anchor)}
+          </Drawer>
         </Fragment>
-     );
+      ))}
+    </Fragment>
+  );
 }
- 
+
 export default DrawerNav;

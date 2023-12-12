@@ -35,7 +35,7 @@ const Category = (props) => {
                     </div>
                     <div className="category__sort">
                         <div className="show__filter">
-                            <Box sx={{ minWidth: 100} }>
+                            <Box sx={{ minWidth: '100%'} }>
                                 <FormControl fullWidth size="small">
                                     <InputLabel>Show</InputLabel>
                                     <Select
@@ -48,9 +48,9 @@ const Category = (props) => {
                                 </FormControl>
                             </Box>
                        </div>
-                       <div className="filter__by">
+                       
                        <div className="show__filter">
-                            <Box sx={{ width: 120} }>
+                            <Box sx={{ width: '100%'} }>
                                 <FormControl fullWidth size="small">
                                     <InputLabel>Filter by</InputLabel>
                                     <Select
@@ -64,7 +64,7 @@ const Category = (props) => {
                             </Box>
                             </div>
                        </div>
-                    </div>
+                    
                 </div>
                 <div className="category__card__container">
                     <div className="category__product__card">

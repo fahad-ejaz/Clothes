@@ -11,20 +11,20 @@ import { Grid} from '@mui/material';
 const Landing = () => {
     const parallax = useParallax({
         // translateY: [0, 5],
-        rotateY: [0, 60],
+        // rotateY: [0, 60],
         opacity: [1.5, 0.3],
         scale: [0.7, 1, "easeOutCubic"],
         shouldAlwaysCompleteAnimation: true,
       });
       const parallax2 = useParallax({
      
-        rotateY: [0, 30],
+        // rotateY: [0, 30],
 
        
       });
       const parallax3 = useParallax({
      
-        rotateY: [0, 60],
+        // rotateY: [0, 60],
 
        
       });

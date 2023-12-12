@@ -92,3 +92,32 @@
     border-style: dashed;
     font-weight:bold;
 }
+@media screen and (max-width: 768px) {
+    .category__header__container {
+        width: 100%;
+    }
+
+    .category__header{
+        align-self: center;
+    }
+
+    .category__header__line{
+        align-self: center;
+    }
+
+    .category__sort{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-self: flex-start;
+        width: 100%;
+    }
+    .show__filter{
+        width: 70%;
+    }
+    .filter__by{
+        width: 100%;
+    }
+   
+}
+
